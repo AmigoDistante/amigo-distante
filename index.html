@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Amigo Distante</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top"><div class="brand"><div class="logo">AD</div><div><strong id="brandName">Amigo Distante</strong><span>Seu pedido, com simplicidade.</span></div></div><nav><a href="#inicio">Início</a><a href="#como">Como funciona</a><button class="ghost" onclick="openModal('login')">Entrar</button><button class="primary" onclick="openModal('cadastro')">Começar</button></nav></header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="heroText">
+    <span class="eyebrow">AMIGO DISTANTE</span>
+    <h1>Um processo simples, claro e feito para você.</h1>
+    <p>Envie seus dados, faça sua solicitação e acompanhe o andamento em uma área reservada.</p>
+    <div class="actions"><button class="primary big" onclick="openModal('cadastro')">Fazer uma solicitação</button><button class="ghost big" onclick="openModal('login')">Já tenho cadastro</button></div>
+    <small>As condições, aprovação e contratação estão sujeitas à análise e aos termos aplicáveis.</small>
+  </div>
+  <div class="heroCard">
+    <div class="miniIcon">✓</div><h3>Transparência</h3><p>Valor solicitado, juros e total são apresentados antes do envio.</p>
+    <hr><div class="rate"><b>30%</b><span>juros informados para o prazo padrão de 2 meses</span></div>
+  </div>
+</section>
+
+<section id="como" class="section">
+<h2>Como funciona</h2><div class="steps">
+<div><b>01</b><h3>Cadastre-se</h3><p>Informe seus dados pessoais e endereço.</p></div>
+<div><b>02</b><h3>Faça o pedido</h3><p>Informe o valor, datas e envie a documentação solicitada.</p></div>
+<div><b>03</b><h3>Acompanhe</h3><p>Entre na sua conta para consultar o status da solicitação.</p></div>
+</div></section>
+
+<div style="text-align:center;margin:0 7% 28px"><button class="ghost" onclick="openModal('admin')">Acesso administrativo</button></div><section class="notice"><strong>Privacidade</strong><p>Os dados enviados devem ser usados apenas para as finalidades informadas, com acesso restrito e medidas de segurança adequadas. Consulte os termos e a política de privacidade antes de utilizar o serviço.</p></section>
+</main>
+
+<div id="modal" class="modal hidden"><div class="modalBox"><button class="close" onclick="closeModal()">×</button><div id="modalContent"></div></div></div>
+<script src="/app.js"></script>
+</body></html>
